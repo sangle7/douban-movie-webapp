@@ -2,7 +2,10 @@
 body{
   font-family: Helvetica Neue For Number,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
-
+.mainContainer{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .movielist {
   display: flex;
   flex-direction: row-reverse;
@@ -10,4 +13,47 @@ body{
   align-items: center;
   border: 1px solid black;
 }
-
+.movie-info{
+  display: flex;
+  justify-content: space-between;
+}
+.movie-info aside{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.movie-detail{
+  display: flex;
+}
+.movie-section{
+  display: flex;
+  flex-direction:column;
+}
+.movie-section>main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movie-section aside{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.cast-section {
+  display: flex;
+}
+.cast-section div{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.director-section {
+  display: flex;
+}
+.director-section div{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}

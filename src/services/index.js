@@ -38,3 +38,11 @@ export async function getSearchResult (params) {
     data: params,
   })
 }
+
+export async function getCommentByMovie (params,id) {
+  return request({
+    url: `/subject/${id}/comments`,
+    method: 'get',
+    data: params,
+  })
+}

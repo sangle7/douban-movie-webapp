@@ -23,8 +23,8 @@ const App = (props) => {
               <Route path="/commingsoon/:page" component={CommingSoon}></Route>
               <Route path="/toplist/:listtype/:page" component={Toplist}></Route>
               <Route exact path="/search" component={SearchList}></Route>
-              <Route path="/movie/:movieid/comments" component={LongComment}></Route>
-              <Route path="/movie/:movieid/reviews" component={ShortComment}></Route>
+              <Route path="/movie/:movieid/comments" component={ShortComment}></Route>
+              <Route path="/movie/:movieid/reviews" component={LongComment}></Route>
               <Route path="/movie/:movieid/pictures" component={MoviePics}></Route>
               <Route path="/movie/:movieid" component={Movie}></Route>
               <Redirect from="/" to="/intheater/1"/>
